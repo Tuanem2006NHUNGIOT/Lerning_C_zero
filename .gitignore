@@ -1,0 +1,3 @@
+.env.cpp
+
+# Muốn git không quản lý file nào thì ghi file đó vào đây
