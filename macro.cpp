@@ -9,15 +9,19 @@ int main() {
 // Khi lập trình như arduino or atm32 and esp32 thì hay dùng macro như bên dưới:
 // define pin 13
 // Dưới đây là ví dụ sử dụng macro trong Arduino trước khi tiền xử lý:
-void setup() {
+void setup(){
     pinMode(pin, OUTPUT); // Sử dụng macro pin
 }
+
+
 void loop() {
     digitalWrite(pin, HIGH); // Sử dụng macro pin
     delay(1000);
     digitalWrite(pin, LOW); // Sử dụng macro pin
     delay(1000);
 }
+
+
 // Khi tiền xử lý, macro pin sẽ được thay thế bằng giá trị 13
 // Vì vậy, mã sẽ trở thành:
 void setup() {
@@ -37,4 +41,4 @@ void loop() {
 // define cong(x,y) x+y  f
 
 // phân biệt giữa scanf và gets: scanf nhập từ bàn phím không dùng dấu cách, còn get thì có thể cách, nói nôm na thì khi cần nhập số thì dùng scanf còn nếu nhập chuỗi có chứa khoảng trắng thì dùng gets 
-/*ffflush(stdin);*/ // Xóa bộ đệm nhập khi  đùng gets thì trước đó nên dùng fflush()
+/*ffflush(stdin);*/ // Xóa bộ đệm nhập khi  đùng gets thì trước đó nên dùng fflush() 
